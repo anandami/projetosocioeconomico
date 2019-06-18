@@ -1,0 +1,173 @@
+/* CONFIGURAÇÕES GLOBAIS */
+	html {
+		font-family: "calibri"!important;
+	}
+	canvas{
+	    width: 648px!important;
+	    height: 390px!important;
+	    /*margin-bottom: 24px!important;*/
+	}
+	canvas.graf_situacao_residencia{
+		float:right!important;
+		margin-left:0px!important;
+	}
+
+	
+/* ===================== */
+/* CONFIGURAÇÃO DA TAG MAIN (CONTEDUDO) */
+	.h_main {
+		height:460px;
+	}
+
+	.main_h {
+		height:520px!important;
+	}
+	.h_col_graf {
+		height:506px!important;
+	}
+	.tit_graf {
+		/*border:1px solid #000!important;*/
+		margin:0px!important;
+		/*height:80px!important;*/
+
+	}
+	.corp_graf {
+		/*border:1px solid #000 !important;*/
+		margin:0px!important;
+		padding:0px!important;
+	}
+
+	/*CONFIGURAÇÃO MENU LATERAL*/
+
+
+		.tabs{
+			height: auto;
+			white-space: normal;
+		}
+		.tab{
+			display: block;
+			width: 100%;
+			border-bottom: 1px solid #424242!important;
+		}
+		.tab-content{
+			height: 200px;
+			width: 100%;
+			background: #424242!important;
+			border:1px solid #424242!important;
+		}
+		.indicator{
+			display: none;
+		}
+
+
+		.men_principal li:hover{
+			background: #bdbdbd!important;
+		}
+		.men_lateral li:hover{
+			background:#bdbdbd!important;
+		}
+	
+		.men_lateral a.active{
+			background: #bdbdbd!important;
+		}
+
+		a.linke {
+	    	height: 74%!important;
+	    	padding: 0px!important;
+	    	font-size: 14px!important;
+	    	font-family: 'calibri'!important;
+	    	color:#616161!important;
+		}
+
+		li.tabe{
+			text-align: left!important;
+			padding: 0px!important;
+	   	    line-height: 24px!important;
+		    height: 30px!important;
+	    	width: 100%!important;
+	    }
+
+	    li.tabe a.active{
+	    	background:rgb(158, 158, 158,.0)!important;
+	    }
+	/*##################*/
+/* #################################### */
+/*##FOOTER DA PAGINA##*/
+	.h_foot {
+		position:absolute;
+		bottom:0px!important;
+		overflow: hidden;
+	    left: 0px;
+	    width: 100%;
+	    margin:0px;
+	}
+/*###################*/
+
+
+
+
+
+
+
+/* Configurações CSS responsáveis pela animação da pagina */
+	.h_inicio {
+		/*border:1px solid #000;*/
+		display:none;
+	}
+
+	.linha_cima{
+		padding:20px;
+		margin:0px;
+	}
+	.linha_baixo2{
+		padding:0px!important;
+		margin:0px!important;
+	}
+
+
+	.h_quem_somos{
+		/*border:1px solid #000;*/
+		display:none;
+	}
+
+	.h_graficos{
+		/*border: 1px solid #000;*/
+		display: none;
+	}
+
+	.h_detalhes{
+		/*border: 1px solid #000;*/
+		display:none;
+}
+/*========================================================*/
+
+/* Configuração pagina quem somos */
+	.linha_baixo{
+		padding-left:20px;
+		margin:0px;
+	}
+
+	.backend{
+		width: 290px!important;
+  		margin-left: -60px!important;
+	}
+	.front{
+		width: 290px!important;
+  		margin-left: -68px!important;
+	}
+	.doc{
+		width: 304px!important;
+  		margin-left: -90px!important;
+	}
+
+	.h_acordion{
+		padding-left:44px!important;
+		margin:0px auto;
+	}
+
+	.tit_h{
+		width: 222px;
+	    display: block;
+	    margin: 0px auto;
+	}
+/*================================*/

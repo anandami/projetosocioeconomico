@@ -1,0 +1,3 @@
+O arquivo CSS que deve ser editado é o _/css/override.css
+
+O arquivo Javascript que deve ser editado é o _js/script.js

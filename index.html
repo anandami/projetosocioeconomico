@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Projeto SocioEconômico</title>
+	<!-- <link rel="stylesheet" href="_css/bootstrap.min.css"/> -->
+	<link rel="stylesheet" type="text/css" href="_css/materialize.min.css"/>
+	<link rel="stylesheet" type="text/css" href="_css/override.css"/>
+
+	<!-- Javascript Reference -->
+		<script type="text/javascript" src="_js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="_js/materialize.min.js"></script>
+		<!-- <script type="text/javascript" src="_js/bootstrap.min.js"></script> -->
+		<script type="text/javascript" src="_js/Chart.min.js"></script>
+		<script type="text/javascript" src="_js/xlsx.full.min.js"></script>
+		<script type="text/javascript" src="_js/script.js"></script>
+
+	<!-- -->
+</head>
+<body>
+	<!-- INICIO CONTAINER -->
+	<div class="container">
+
+
+
+
+		
+
+		<!-- INICIO MENU PRINCIPAL -->
+			<header class="row">
+				<nav class="nav-wraper grey lighten-1 ">
+					<div class="container">		
+						<a href="#" id="loggo" class="brand-logo grey-text text-lighten-1"><img src="_img/logo_fundo_cinza.png" class="responsive-img"></a>
+						
+						<a href="#" class="sidenav-trigger left" data-target="mobile-links"><i class="material-icons">menu</i></a>
+					
+						<ul class="right hide-on-med-and-down men_principal">
+							<li><a href="#"  id="bt_inicio"      class="white-text" >  INÍCIO</a></li>
+							<li><a href="#"  id="bt_quem_somos"  class="white-text" >  QUEM SOMOS</a></li>
+							<li><a href="#"  id="bt_graficos"    class="white-text" >  GRÁFICOS</a></li>
+							<li><a href="#"  id="bt_detalhes" 	 class="white-text" > DETALHES</a></li>
+						</ul>
+					</div>
+				</nav>	
+
+				<ul class="sidenav"  id="mobile-links">
+					<li><a href="#"  class="grey-text" >  INÍCIO</a></li>
+					<li><a href="#"  class="grey-text" >  QUEM SOMOS</a></li>
+					<li><a href="#"  class="grey-text" >  GRÁFICOS</a></li>
+					<li><a href="#"  class="grey-text" >  DETALHES</a></li>
+				</ul>
+			</header>
+		<!-- FIM MENU PRINCIPAL -->
+
+
+
+		<!-- CONTEUDO DIV HOME(OU INICIO) -->
+			<div class="row h_inicio h_col_graf">	
+			<!-- INICIO CONTEUDO -->
+			<main class="row h_main  z-depth-1">		
+				<div class="row linha_cima">
+					<div class="col m12 text-flow">
+						<h4>Olá! <br> Bem vindo ao nosso trabalho de Análise SocioEconômica</h4>
+					</div>
+					<div class="col m12 text-flow">
+						<blockquote>
+								Este trabalho tem por objetivo analisar os dados dos alunos do curso de Análise e Desenvolvimento de Sistemas, da Fatec, campus de Franca. 
+								O projeto foi feito em duas etapas principais, subdividas em tarefas menores: a primeira parte foi a coleta de dados através de um formulário online, onde os alunos do segundo semestre (manhã e noite) responderam algumas questões acerca da composição familiar, renda, características pessoais e rotina. 
+								Em uma segunda etapa, foi realizado o desenvolvimento de um sistema de análise desses dados a fim de apresenta-los em formato gráfico. Mediante a análise gráfica é possível tornar visível a análise do todo acerca da turma ingressante,possibilitando traçar perfis dos estudantes.	
+						</blockquote>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col m6 push-m5">
+							<a onclick= "ver_tab('bt_graficos')" class="waves-effect waves-light btn-large grey" >Gráficos</a>
+					</div>
+				</div>		
+			</main>
+			<!-- FIM CONTEUDO -->
+			</div>
+		<!-- FIM DIV HOME(OU INICIO) -->
+
+
+
+
+
+
+		<!-- CONTEUDO BOTAO QUEM SOMOS -->
+			<div class="row h_quem_somos h_col_graf">	
+			<!-- INICIO CONTEUDO -->
+			<main class="row h_main main_h  z-depth-1">		
+				<div class="row linha_cima">
+					<div class="col m12 text-flow">
+						<h5 class="center"> Somos alunos do segundo semestre do curso de Análise e Desenvolvimento de Sistemas, da Fatec, campus de Franca.</h5>
+					</div>
+				</div>
+				<div class="row linha_baixo2">
+					<div class="col m4">
+						<ul class="collapsible popout col m6 push-m3 text-flow white left backend" stlye="display:block;" data-collapsible="accordion">
+							<h5 class="center grey lighten-3 tit_h">Back-End</h5>
+							<li>
+							  	<div class="collapsible-header h_acordion">
+							  		<i class="material-icons" color=" rgba(229, 115, 115, 0.0)">Ananda_Michelino</i>
+							  	</div>
+							  	<div class="collapsible-body center">
+							  		<span>Ananda Natália Michelino <br/> Back-end <br/> ananda.michelino@fatec.sp.gov.br </span>
+							  	</div>
+							</li>
+							<li>
+							 	<div class="collapsible-header h_acordion">
+							 		<i class="material-icons center">Lucas_Pessoa</i>
+							 	</div>
+							  	<div class="collapsible-body center">
+							  		<span>Lucas Fernandes Pessoa <br/> Back-end <br/> lucas.pessoa01@fatec.sp.gov.br</span>
+							  	</div>
+							</li>
+						</ul>
+					</div>
+					<div class="col m4">
+						<ul class="collapsible popout col m6 push-m3 text-flow white front" stlye="display:block;" data-collapsible="accordion">
+							<li>
+								<h5 class="center grey lighten-3">Front-End</h5>
+							  	<div class="collapsible-header h_acordion">
+							  		<i class="material-icons">Ana_Coimbra</i>
+							  	</div>
+							  	<div class="collapsible-body center" color="grey lighten-1">
+							  		<span> Ana Carolina Prado Estevão Coimbra<br/> Front-end <br/> ana.coimbra@fatec.sp.gov.br </span>
+							  	</div>
+							</li>
+							<li>
+								<div class="collapsible-header h_acordion">
+									<i class="material-icons">João_Moraes</i>
+								</div>
+								<div class="collapsible-body center">
+									<span> João Pedro Moraes <br/> Front end <br/> email</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="col m4">
+						<ul class="collapsible popout col m6 push-m3 text-flow white doc" stlye="display:block;" data-collapsible="accordion">	
+							<li>
+								<h5 class="center grey lighten-3">Documentação</h5>
+								<div class="collapsible-header h_acordion">
+									
+									<i class="material-icons">Fernanda_Melo</i>
+								</div>
+								<div class="collapsible-body center">
+									<span> Fernanda Luiza Lopes Melo <br/> Documentação <br/> emailfernanda.melo01@fatec.sp.gov.br</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>		
+			</main>
+			<!-- FIM CONTEUDO -->
+			</div>
+		<!-- FIM DIV QUEM SOMOS -->
+
+
+
+
+		<!-- CONTEUDO DIV GRAFICOS -->
+			<div class="row h_graficos h_col_graf">	
+			<!-- INICIO CONTEUDO -->
+			<main class="row h_main">		
+				<div class="col m3 h_col_graf z-depth-1">
+					<ul class="tabs men_lateral">
+						<li class="tab tabe ">
+							<a href="#tp_etaria" id="bt_etaria" class="linke">Faixa Etária</a></li>
+						<li class="tab tabe ">
+							<a href="#tp_civil" id="bt_civil"  class="linke">Estado Civil</a></li>
+						<li class="tab tabe">
+							<a href="#tp_filhos" id="bt_filhos" class="linke">Possui Filhos?</a></li>
+						<li class="tab tabe">
+							<a href="#tp_reside_franca" id="bt_reside_franca" class="linke">Domicílio atual</a></li>
+						<li class="tab tabe">
+							<a href="#tp_locomocao" id="bt_locomocao" class="linke">Meio de transporte</a></li>
+						<li class="tab tabe">
+							<a href="#tp_distancia" id="bt_distancia" class="linke">Distancia da Fatec</a></li>
+						<li class="tab tabe">
+							<a href="#tp_situacao_residencia" id="bt_situacao_residencia" class="linke">Situação civil do domicílio </a></li>
+						<li class="tab tabe">
+							<a href="#tp_compo_familiar" id="bt_compo_familiar" class="linke" >Composição Familiar</a></li>
+						<li class="tab tabe">
+							<a href="#tp_mora_quem" id="bt_mora_quem" class="linke">Quem mais compõe o núcleo familiar?</a></li>
+						<li class="tab tabe">
+							<a href="#tp_renda_familiar" id="bt_renda_familiar" class="linke">Renda Familiar</a></li>
+						<li class="tab tabe">
+							<a href="#tp_trabalho_individual" id="bt_trabalho_individual" class="linke">Trabalho individual</a></li>
+						<li class="tab tabe">
+							<a href="#tp_vida_escolar" id="bt_vida_escolar" class="linke">Ensino anterior à Fatec</a></li>
+						<li class="tab tabe">
+							<a href="#tp_conhece_informat" id="bt_conhece_informat" class="linke">habilidade com T.I.</a></li>
+						<li class="tab tabe">
+							<a href="#tp_deficiencia" id="bt_deficiencia" class="linke">Deficiencia</a></li>
+						<li class="tab tabe">
+							<a href="#tp_saude" id="bt_saude" class="linke">Acesso aos serviços de saúde</a></li>
+						<li class="tab tabe">
+							<a href="#tp_razaofatec" id="bt_razaofatec" class="linke">Por que escolheu a FATEC?</a></li>
+					</ul>
+				</div>
+				
+				<div class="col m9 h_col_graf z-depth-1">
+					<!-- TAB - FAIXA ETÁRIA -->
+					<div id="tp_etaria" class="col m12 ">
+						<div class="row tit_graf">
+							<h5 class="center">Faixa Etaria dos estudantes</h5>
+
+						</div>
+						<div class="row corp_graf">
+							<canvas id="graf_etaria"></canvas>
+						</div>
+					</div>
+					<!-- -->		
+
+					<!-- TAB - ESTADO CIVIL -->
+					<div id="tp_civil" class="col m12">
+						<div class="row tit_graf">
+							<h5 class="center">Estado Civil</h5>	
+						</div>
+						<div class="row corp_graf">
+							<canvas id="graf_civil"></canvas>
+						</div>
+					</div>
+					<!-- -->
+
+					<!-- TAB - FILHOS -->
+					<div id="tp_filhos" class="col m12">
+						<div class="row tit_graf">
+							<h5 class="center">Filhos</h5>
+						</div>
+						<div class="row corp_graf">
+							<canvas id="graf_filhos"></canvas>
+						</div>
+					</div>
+					<!-- -->
+					
+					<!-- TAB - RESIDE FRANCA -->
+					<div id="tp_reside_franca" class="col m12">
+						<div class="row tit_graf">
+							<h5 class="center">O aluno reside ou não em Franca?</h5>
+						</div>
+						<div class="row corp_graf">
+							<canvas id="graf_reside_franca"></canvas>
+						</div>
+					</div>
+					<!-- -->	
+
+					<!-- TAB - LOCOMOÇÃO -->
+					<div id="tp_locomocao" class="col m12">
+						<div class="row tit_graf">
+							<h5 class="center">Meio de Transporte</h5>	
+						</div>
+						<div class="row corp_graf">
+							<canvas id="graf_locomocao"></canvas>
+						</div>
+					</div>
+					<!-- -->	
+
+					<!-- TAB - DISTANCIA FATEC -->
+					<div id="tp_distancia" class="col m12">
+						<div class="row tit_graf">
+							<h5 class="center">Distancia da Fatec</h5>	
+						</div>
+						<div class="row corp_graf">
+							<canvas id="graf_distancia"></canvas>
+						</div>
+					</div>
+					<!-- -->		
+
+					<!-- TAB - RESIDENCIA SITUAÇÃO -->
+					<div id="tp_situacao_residencia" class="col m12">
+						<div class="row tit_graf">
+							<h5 class="center">Qual tipo de residência o aluno vive?</h5>
+						</div>
+						<div class="row corp_graf">
+							<canvas id="graf_situacao_residencia"></canvas>
+						</div>
+					</div>
+					<!-- -->
+
+					<!-- TAB - COMPOSIÇÃO FAMILIAR -->
+					<div id="tp_compo_familiar" class="col m12">
+						<div class="row tit_graf">
+							<h5 class="center">Quantas pessoas compõem o núcleo familiar</h5>	
+						</div>
+						<div class="row corp_graf">
+							<canvas id="graf_compo_familiar"></canvas>
+						</div>
+					</div>
+					<!-- -->
+
+					<!-- TAB - MORA COM QUEM? -->
+					<div id="tp_mora_quem" class="col m12">
+						<div class="row tit_graf">
+							<h5 class="center">Com quem o aluno reside?</h5>	
+						</div>
+						<div class="row corp_graf">
+							<canvas id="graf_mora_quem"></canvas>
+						</div>
+					</div>
+					<!-- -->
+
+					<!-- TAB - RENDA FAMILIAR -->
+					<div id="tp_renda_familiar" class="col m12">
+						<div class="row tit_graf">
+							<h5 class="center">Renda bruta familiar (em salários mínimos)</h5>	
+						</div>
+						<div class="row corp_graf">
+							<canvas id="graf_renda_familiar"></canvas>
+						</div>
+					</div>
+					<!-- -->
+
+
+					<!-- TAB - AREA TRABALHO//Trabalho individual exercido pelo aluno -->
+					<div id="tp_trabalho_individual" class="col m12">
+						<div class="row tit_graf">
+							<h5 class="center">Exercício de Atividade Remunerada pelo Estudante</h5>
+						</div>
+						<div class="row corp_graf">
+							<canvas id="graf_trabalho_individual"></canvas>
+						</div>
+					</div>
+					<!-- -->
+
+
+					<!-- TAB - VIDA ESCOLAR -->
+					<div id="tp_vida_escolar" class="col m12">
+						<div class="row tit_graf">
+							<h5 class="center">Vida Escolar Pretérita</h5>
+						</div>
+						<div class="row corp_graf">
+							<canvas id="graf_vida_escolar"></canvas>
+						</div>
+					</div>
+					<!-- -->	
+
+
+					<!-- TAB - TEM CONHECIMENTO EM INFORMATICA -->
+					<div id="tp_conhece_informat" class="col m12">
+						<div class="row tit_graf">
+							<h5 class="center">Qual o nível de conhecimento em Tecnologia da Informação?</h5>	
+						</div>
+						<div class="row corp_graf">
+							<canvas id="graf_conhece_informat"></canvas>
+						</div>
+					</div>
+					<!-- -->
+
+
+					<!-- TAB - DEFICIENCIA -->
+					<div id="tp_deficiencia" class="col m12">
+						<div class="row tit_graf">
+							<h5 class="center">Deficiencia</h5>
+						</div>
+						<div class="row corp_graf">
+							<canvas id="graf_deficiencia"></canvas>
+						</div>
+					</div>
+					<!-- -->
+
+					<!-- TAB - ACESSO AOS SERVIÇOS DE SAÚDE -->
+					<div id="tp_saude" class="col m12">
+						<div class="row tit_graf">
+							<h5 class="center">Serviços de Saúde</h5>
+						</div>
+						<div class="row corp_graf">
+							<canvas id="graf_saude"></canvas>
+						</div>
+					</div>
+					<!-- -->
+
+					<!-- TAB - POR QUE ESCOLHEU A FATEC? -->
+					<div id="tp_razaofatec" class="col m12">
+						<div class="row tit_graf">
+							<h5 class="center">Porque a Fatec ?</h5>
+						</div>
+						<div class="row corp_graf">
+							<canvas id="graf_razaofatec"></canvas>
+						</div>
+					</div>
+					<!-- -->
+					
+				</div>		
+			</main>
+			<!-- FIM CONTEUDO -->
+			</div>
+		<!-- FIM DIV GRAFICOS -->
+
+
+
+	
+
+
+		<!-- CONTEUDO DIV DETALHES -->
+			<div class="row h_detalhes">	
+			<!-- INICIO CONTEUDO -->
+			<main class="row h_main  z-depth-1">		
+				<div class="row linha_cima">
+					<div class="col m6 push-m3 text-flow">
+						<h6 class="center"> O projeto de análise socioeconômica nos apresentou dados importantes para entendermos o perfil dos alunos que frequentam o curso de ADS na FATEC, campus de Franca. Chegamos aos dados de que: 
+								<br>
+								<br>-quase 60% dos alunos possui entre 21 e 30 anos;
+								<br>-89% não possuem filhos; 
+								<br>-Mais da metade dos alunos não faz uso de transporte coletivo;
+								<br>-88% dos alunos são do sexo masculino;
+								<br>-77% dos alunos cursaram integralmente ensino médio na rede pública;
+								<br>-79% dos alunos é solteiro;
+								<br>-A maioria são trabalhadores do período integral.
+								<br><br>
+							No tocante à correlação entre a vida pessoal e acadêmica dos alunos, podemos	perceber que há dificuldade no que tange à disponibilidade de tempo no período extraclasse e que este pode ser o maior desafio para a conclusão do curso, pois, o período de estudos fora das salas de aula é inferior ao academicamente necessário para a demanda de atividades.</h6>
+					</div>
+					
+				</div>
+				
+				
+			</main>
+			<!-- FIM CONTEUDO -->
+			</div>
+		<!-- FIM DIV DETALHES -->
+
+
+
+
+
+
+
+
+
+
+		<!-- INICIO FOOTER -->
+			<footer class="row h_foot">	
+				<div class="footer-copyright center">
+					Desenvolvido por - Ananda, Lucas, Ana, Fernanda e João
+				</div>
+			</footer>
+		<!-- FIM FOOTER -->	
+
+	</div>
+	<!-- FIM CONTAINER -->
+
+	
+</body>
+</html>
